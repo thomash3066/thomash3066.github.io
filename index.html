@@ -39,6 +39,14 @@
 			var thumb1 = document.getElementById("image1"); 
 			
 			thumb1.onmouseover = showDetailedView;
+			
+			var thumb2 = document.getElementById("image2"); 
+			
+			thumb2.onmouseover = showDetailedView;
+			
+			var thumb3 = document.getElementById("image3"); 
+			
+			thumb3.onmouseover = showDetailedView;
 		}
 
 		function showDetailedView()
@@ -56,15 +64,8 @@
 			im1.id = "img1popin";
 			im1.innerHTML = "";
 		}
-		
-				function initPopout()
-		{
-			var thumb2 = document.getElementById("image2"); 
-			
-			thumb2.onmouseover = showDetailedView;
-		}
 
-		function showDetailedView()
+		function showDetailedView2()
 		{
 			var im2 = document.getElementById("img2popin");
 			im2.id = "img2popout";
@@ -73,21 +74,14 @@
 			popOut.onmouseout = hideDetailedView;			
 		}
 
-		function hideDetailedView()
+		function hideDetailedView2()
 		{
 			var im2 = document.getElementById("img2popout");
 			im2.id = "img2popin";
 			im2.innerHTML = "";
 		}
 		
-				function initPopout()
-		{
-			var thumb3 = document.getElementById("image3"); 
-			
-			thumb3.onmouseover = showDetailedView;
-		}
-
-		function showDetailedView()
+		function showDetailedView3()
 		{
 			var im3 = document.getElementById("img3popin");
 			im3.id = "img3popout";
@@ -96,7 +90,7 @@
 			popOut.onmouseout = hideDetailedView;			
 		}
 
-		function hideDetailedView()
+		function hideDetailedView3()
 		{
 			var im3 = document.getElementById("img3popout");
 			im3.id = "img3popin";
